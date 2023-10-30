@@ -1,0 +1,287 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* ⬇️  HEADER   ⬇️ */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 50px;
+  background-color: #000000;
+  width: 100%;
+  height: 150px;
+  box-shadow: 0 10px 25px rgb(0, 0, 0.4);
+}
+.logo {
+  width: 120px;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+  font-size: var(--text-m);
+  font-weight: var(--text-600);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.list-ul li a {
+  color: white;
+}
+.list-ul li a:hover {
+  text-decoration: underline;
+}
+/* ⬆️  HEADER  ⬆️ */
+
+/* menu hamburguesa */
+#toggle-menu {
+  display: none;
+}
+
+.list label {
+  display: none;
+}
+.fa-solid {
+  color: whitesmoke;
+}
+/*  */
+
+/* ⬇️  HERO / SECTION PRINCIPAL ⬇️ */
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1500px;
+  /* background-color: bisque; */
+}
+.section-presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+.bg-section-presentacion {
+  background: url(imgs-landing/fondos-gifts-varios/fondo-lambos-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+.card-section-presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.slogan-card {
+  /* border: solid red 1px; */
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.h1-slogan-card {
+  background-color: whitesmoke;
+  color: black;
+  font-weight: var(--text-600);
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-slogan-card {
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+
+.btn-slogan {
+  background-color: goldenrod;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+.btn-slogan a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* ⬆️  HERO / SECTION PRINCIPAL  ⬆️ */
+
+.section-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  height: 1000px;
+  gap: 40px;
+  padding: 25px;
+  background-color: black;
+}
+
+.card1-section-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: start;
+  height: 50%;
+  width: 100%;
+  border: whitesmoke solid 1.5px;
+  position: relative;
+}
+
+.h1-card1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+  background: whitesmoke;
+  color: black;
+  padding: 4px;
+}
+.bg-card1 {
+  width: 250px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+
+  left: 50%;
+  opacity: 0.4;
+}
+.text-card1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  width: 75%;
+  font-weight: 500;
+  font-size: 2rem;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+.card2-section-info {
+  display: flex;
+  gap: 15px;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  border: whitesmoke solid 1.5px;
+  position: relative;
+}
+
+.h1-card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+  background: whitesmoke;
+  color: black;
+  padding: 4px;
+}
+.bg-card2 {
+  width: 250px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  right: 50%;
+  opacity: 0.4;
+}
+.text-card2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  width: 75%;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px;
+  width: 100%;
+  height: 250px;
+  background-color: powderblue;
+}
+
+.list-legales {
+  display: flex;
+  gap: 25px;
+}
+.contactos li {
+  padding: 5px;
+}
+.sucursales li {
+  padding: 5px;
+}
+.contactos li a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.sucursales li a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.listado-logos-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.listado-logos-footer li img {
+  width: 65px;
+}
