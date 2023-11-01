@@ -4,6 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* ⬇️  HEADER   ⬇️ */
@@ -45,7 +46,6 @@
 .list-ul li a:hover {
   text-decoration: underline;
 }
-/* ⬆️  HEADER  ⬆️ */
 
 /* menu hamburguesa */
 #toggle-menu {
@@ -58,17 +58,19 @@
 .fa-solid {
   color: whitesmoke;
 }
-/*  */
+/* menu hamburguesa */
+/* ⬆️  HEADER  ⬆️ */
 
-/* ⬇️  HERO / SECTION PRINCIPAL ⬇️ */
+/* ⬇️  HERO / SECTIONS x3  1.presentacion / 2.info de la empresa / 3.autos alta gama⬇️ */
 #hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 1500px;
-  /* background-color: bisque; */
+  height: 85%;
 }
+
+/* SECTION 1. */
 .section-presentacion {
   display: flex;
   flex-direction: column;
@@ -79,14 +81,13 @@
   position: relative;
 }
 .bg-section-presentacion {
-  background: url(imgs-landing/fondos-gifts-varios/fondo-lambos-2.webp);
+  background: url(imgs-landing/fondos-gifts-varios/lambo-negra-2.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: absolute;
   height: 100%;
   width: 100%;
-  opacity: 0.8;
 }
 .card-section-presentacion {
   display: flex;
@@ -98,7 +99,6 @@
 }
 
 .slogan-card {
-  /* border: solid red 1px; */
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -108,17 +108,16 @@
 }
 
 .h1-slogan-card {
-  background-color: whitesmoke;
-  color: black;
-  font-weight: var(--text-600);
-  font-size: xx-large;
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 36px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-slogan-card {
-  font-weight: 300;
+  font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: whitesmoke;
+  color: whitesmoke;
 }
 
 .btn-slogan {
@@ -128,21 +127,23 @@
 }
 
 .btn-slogan a {
-  text-decoration: none;
+  /* text-decoration: none; */
   text-transform: capitalize;
-  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
   color: #000000;
 }
+/* SECTION 1. FIN */
 
-/* ⬆️  HERO / SECTION PRINCIPAL  ⬆️ */
-
+/* SECTION 2. */
 .section-info {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
-  height: 1000px;
+  height: 800px;
   gap: 40px;
   padding: 25px;
   background-color: black;
@@ -154,31 +155,23 @@
   align-items: center;
   justify-content: start;
   height: 50%;
-  width: 100%;
-  border: whitesmoke solid 1.5px;
-  position: relative;
+  width: 95%;
+  border-right: whitesmoke 0.1px solid;
 }
 
 .h1-card1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 28px;
   height: 100%;
   width: 25%;
   background: whitesmoke;
   color: black;
+  border-radius: 5px;
   padding: 4px;
-}
-.bg-card1 {
-  width: 250px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-
-  left: 50%;
-  opacity: 0.4;
 }
 .text-card1 {
   display: flex;
@@ -187,9 +180,9 @@
   justify-content: center;
   height: 100%;
   width: 75%;
-  font-weight: 500;
-  font-size: 2rem;
-  position: relative;
+  font-weight: 300;
+  font-size: 22px;
+  padding: 5px;
   font-family: Arial, Helvetica, sans-serif;
   color: whitesmoke;
 }
@@ -199,32 +192,25 @@
   gap: 15px;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   height: 50%;
-  width: 100%;
-  border: whitesmoke solid 1.5px;
-  position: relative;
+  width: 95%;
+  border-left: whitesmoke 0.1px solid;
 }
 
 .h1-card2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 28px;
   height: 100%;
   width: 25%;
   background: whitesmoke;
   color: black;
+  border-radius: 5px;
   padding: 4px;
-}
-.bg-card2 {
-  width: 250px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  right: 50%;
-  opacity: 0.4;
 }
 .text-card2 {
   display: flex;
@@ -233,12 +219,131 @@
   justify-content: center;
   height: 100%;
   width: 75%;
-  font-weight: 500;
-  font-size: 2rem;
+  font-weight: 300;
+  font-size: 22px;
+  padding: 5px;
   font-family: Arial, Helvetica, sans-serif;
   color: whitesmoke;
 }
+/* SECTION 2. FIN  */
 
+/* SECTION 3. */
+.div-titulo-altagama {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color: black;
+}
+
+.titulo-altagama {
+  color: whitesmoke;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  text-align: center;
+}
+hr {
+  width: 80%;
+  text-align: center;
+  border-color: red;
+}
+.section-altagama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: black;
+}
+.cards-altagama {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 25px;
+  width: 80%;
+}
+
+.cards-altagama div {
+  width: 30%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  border: solid 3px red;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.altagama-div1:hover {
+  background-color: rgb(179, 179, 179);
+}
+.altagama-div2:hover {
+  background-color: rgb(179, 179, 179);
+}
+.altagama-div3:hover {
+  background-color: rgb(179, 179, 179);
+}
+.altagama-div4:hover {
+  background-color: rgb(179, 179, 179);
+}
+.altagama-div5:hover {
+  background-color: rgb(179, 179, 179);
+}
+.altagama-div6:hover {
+  background-color: rgb(179, 179, 179);
+}
+
+.cards-altagama div img {
+  width: 80%;
+  height: 200px;
+  border-bottom: solid 1px black;
+}
+
+.cards-altagama div button {
+  margin-top: 25px;
+  padding: 12px;
+  border-radius: 5px;
+}
+.cards-altagama div button a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* boton de registro */
+.btn-registro-altagama {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-registro-altagama button {
+  padding: 15px;
+  border-radius: 5px;
+  /* background-color: cornflowerblue; */
+  background-color: goldenrod;
+}
+
+.btn-registro-altagama button a {
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* SECTION 3. FIN  */
+
+/* !!!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!!!!!!  */
 .footer {
   display: flex;
   flex-direction: column;
