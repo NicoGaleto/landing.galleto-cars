@@ -17,28 +17,38 @@
   background-color: #000000;
   width: 100%;
   height: 150px;
-  box-shadow: 0 10px 25px rgb(0, 0, 0.4);
+  box-shadow: 0 10px 15px rgb(0, 0, 0.4);
+}
+
+a span {
+  color: #0099ff;
 }
 .logo {
   width: 120px;
   height: 100%;
   padding-top: 20px;
 }
-
 .list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 5px;
 }
 
 .list-ul {
   display: flex;
-  gap: 50px;
+  width: 80%;
+  gap: 10px;
   align-items: center;
   text-align: center;
-  font-size: var(--text-m);
-  font-weight: var(--text-600);
+  font-size: 18px;
+  font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
+}
+.list-ul li {
+  display: flex;
+  width: 100%;
 }
 .list-ul li a {
   color: white;
@@ -59,15 +69,15 @@
   color: whitesmoke;
 }
 /* menu hamburguesa */
-/* ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️ */
 
+/* extraido de universe.io */
 .registro1 {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 100vh;
-  background-color: #97eeff;
+  background-color: black;
 }
 .container {
   max-width: 350px;
@@ -215,7 +225,14 @@
   color: #0099ff;
   font-size: 9px;
 }
-/* ⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️⬆️ */
+/* extraido de universe.io */
+
+.registro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
 /* ⬆️  HEADER  ⬆️ */
 
 /* ⬇️  HERO / SECTIONS x3  1.presentacion / 2.info de la empresa / 3.autos alta gama⬇️ */
@@ -225,6 +242,8 @@
   justify-content: center;
   align-items: center;
   height: 85%;
+  width: 100%;
+  padding-top: 5px;
 }
 
 /* SECTION 1. */
@@ -253,6 +272,7 @@
   text-align: center;
   justify-content: space-around;
   position: relative;
+  gap: 15px;
 }
 
 .slogan-card {
@@ -261,7 +281,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 25px;
 }
 
 .h1-slogan-card {
@@ -491,7 +511,7 @@
   justify-content: space-evenly;
   flex-direction: column;
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-color: black;
 }
 
@@ -535,6 +555,7 @@
   flex-wrap: wrap;
   gap: 25px;
   padding-top: 25px;
+  padding-bottom: 25px;
   width: 80%;
 }
 
@@ -546,6 +567,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  padding: 10px;
   gap: 10px;
   /* border-radius: 15px; */
   /* box-shadow: 0px 5px 10px whitesmoke; */
@@ -555,21 +577,27 @@
 
 .altagama-div1:hover {
   background-color: rgb(179, 179, 179);
+  border-radius: 15px;
 }
 .altagama-div2:hover {
   background-color: rgb(179, 179, 179);
+  border-radius: 15px;
 }
 .altagama-div3:hover {
   background-color: rgb(179, 179, 179);
+  border-radius: 15px;
 }
 .altagama-div4:hover {
   background-color: rgb(179, 179, 179);
+  border-radius: 15px;
 }
 .altagama-div5:hover {
   background-color: rgb(179, 179, 179);
+  border-radius: 15px;
 }
 .altagama-div6:hover {
   background-color: rgb(179, 179, 179);
+  border-radius: 15px;
 }
 
 .cards-altagama div img {
@@ -579,12 +607,13 @@
 }
 .cards-altagama div h2 {
   color: whitesmoke;
+  height: 200px;
 }
 
 .cards-altagama div button {
-  margin-top: 25px;
   padding: 12px;
   border-radius: 5px;
+  height: 50px;
 }
 .cards-altagama div button a {
   font-family: Arial, Helvetica, sans-serif;
@@ -595,7 +624,7 @@
 }
 
 /* boton de registro */
-.btn-registro-altagama {
+/* .btn-registro-altagama {
   width: 100%;
   height: 100px;
   display: flex;
@@ -605,7 +634,7 @@
 .btn-registro-altagama button {
   padding: 15px;
   border-radius: 5px;
-  /* background-color: cornflowerblue; */
+  background-color: cornflowerblue;
   background-color: goldenrod;
 }
 
@@ -614,7 +643,7 @@
   font-weight: 700;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 /* SECTION 3. FIN  */
 
 /* !!!!!!!!!!!!!!!!! FOOTER !!!!!!!!!!!!!!!!!!!!  */
@@ -654,6 +683,13 @@
   text-transform: capitalize;
 }
 
+.logos-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .listado-logos-footer {
   display: flex;
   align-items: center;
@@ -662,5 +698,138 @@
 }
 
 .listado-logos-footer li img {
-  width: 65px;
+  /* width: 65px; */
+  display: flex;
+  align-items: center;
+  box-sizing: content-box;
+  width: 100%;
+}
+
+/* MEDIA CELULARES */
+@media (max-width: 580px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .list span {
+    color: #97eeff;
+  }
+  /* HEADER */
+  .header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 5px 25px;
+    z-index: 999;
+  }
+  .logo {
+    width: 20%;
+  }
+  #toggle-menu {
+    display: none;
+  }
+  .list ul {
+    background: gray;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: start;
+    display: none;
+    padding-top: 15px;
+    gap: 25px;
+  }
+  .list-ul li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .list-ul li:hover {
+    background-color: darkgray;
+  }
+  .list-ul li a {
+    display: flex;
+    text-transform: uppercase;
+    color: whitesmoke;
+  }
+  .list {
+    display: flex;
+    justify-content: end;
+  }
+  .list i {
+    display: block;
+  }
+  #toggle-menu:checked ~ .list-ul {
+    display: flex;
+  }
+  .list-ul li {
+    width: 100%;
+  }
+
+  .list label {
+    display: flex;
+  }
+  .list i {
+    font-size: 36px;
+  }
+  .list-ul li a:hover {
+    text-decoration: underline;
+  }
+  /* HEADER  */
+
+  /* HERO */
+  #hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    height: 75%;
+  }
+  .h1-slogan-card {
+    padding: 5px;
+  }
+  .cards-altagama {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .div-titulo-altagama {
+    width: 90%;
+    border-bottom: solid 2px #0099ff;
+  }
+  .cards-altagama div {
+    width: 60%;
+  }
+  /* HERO */
+
+  /* FOOTER */
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+  }
+
+  .logos-footer {
+    width: 80%;
+  }
+  .listado-logos-footer {
+    width: 100%;
+  }
+  .listado-logos-footer li img {
+    width: 100%;
+  }
+  /* FOOTER */
 }
